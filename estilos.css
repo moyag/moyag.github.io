@@ -130,14 +130,14 @@ header .navbar li a:hover {
 }
 
 .copyright {
-    position: absolute;
+    position: left;
     bottom: 0;
     left: 800px;
     margin-bottom: 20px;
     padding: 0 100px 30px;
     display: flex;
     justify-content: left;
-    align-items: left;
+    align-items: center;
 }
 
 .copyright p {
