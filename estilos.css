@@ -136,6 +136,59 @@ header .navbar li a:hover {
     width: 480px;
 }
 
+.contacto {
+    position: relative;
+    background: #31356b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contacto .cardContacto {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contacto .cardContacto .cardImg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    overflow: hidden;
+    box-shadow: 15px 15px 0px 0px #bbbeef;
+}
+
+.contacto .cardContacto .cardImg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contacto .cardContacto .card .contenidoCard {
+    width: 400px;
+}
+
+.contacto .cardContacto .card .contenidoCard p {
+    color: #bbbeef;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.contacto .cardContacto .card {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
 
 .copyright {
     position: absolute;
