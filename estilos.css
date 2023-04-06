@@ -53,11 +53,10 @@ header {
 }
 
 header .logo {
-    color: #ffffd5;
+    color: blue;
     font-size: 2em;
     text-decoration: none;
     text-transform: uppercase;
-    background: blue;
     padding: 0 10px;
     font-family: 'lora', serif;
     font-weight: 600;
