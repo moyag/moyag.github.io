@@ -31,7 +31,6 @@ body{
     }
 }
 
-
 section {
     position: relative;
     width: 100%;
@@ -54,25 +53,14 @@ header {
 }
 
 header .logo {
-    position: absolute;
-    top: 25%;
-    right: 25%;
-    background-image: url(\img\mm.jpg);
-    background-size: 100%;
-    -webkit-text-fill-color: transparent;
-    color: blue;
-    padding-top: 20px;
-    font-size: 170px;
-    animation: filling 2s ease forwards;
-}
-
-@keyframes filling {
-    from {
-        background-position: center 25%;
-    }
-    to {
-        background-position: center 50%;
-    }
+    color: #ffffd5;
+    font-size: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #9b7239;
+    padding: 0 10px;
+    font-family: 'lora', serif;
+    font-weight: 600;
 }
 
 header .navbar{
@@ -147,6 +135,17 @@ header .navbar li a:hover {
 
 .contenido .imgBox img {
     width: 480px;
+}
+
+.circulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #9b7239;
+    clip-path: circle(650px at right 750px);
+    width: 100%;
+    height: 100%;
+
 }
 
 .copyright {
