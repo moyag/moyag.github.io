@@ -136,32 +136,106 @@ header .navbar li a:hover {
     width: 480px;
 }
 
-.contacto {
+section .contactForm {
     position: relative;
     background: #31356b;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    width: 90%;
+    height: 90%;
+    box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+section .contactForm .form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    margin-left: 30px;
+}
+
+section .contactForm .form form{
+    width: 100%;
+}
+
+section .contactForm .form .texto h2{
+    color: #1766a3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section .contactForm .form .texto p{
+    color: #0b426c;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+section .contactForm .form form .inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+section .contactForm .form form .inputBox label{
+    color: #1766a3;
+    font-weight: 700;
+}
+
+section .contactForm .form form .inputBox input[type="text"],
+section .contactForm .form form .inputBox input[type="email"],
+section .contactForm .form form .inputBox textarea{
+    border: none;
+    background: #cbebfb;
+    padding: 10px;
+    border-radius: 15px;
+    color: #1766a3;
+    resize: none;
+}
+
+section .contactForm .form form .inputBox input[type="text"]:focus,
+section .contactForm .form form .inputBox input[type="email"]:focus,
+section .contactForm .form form .inputBox textarea:focus{
+    outline: 2px solid #1766a3;
+}
+
+section .contactForm .form form input[type="submit"]{
+    background: #1766a3;
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    padding: 10px;
+    border-radius: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+section .contactForm .form form input[type="submit"]:hover{
+    background: #0b426c;
+}
+
+section .contactForm .info {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.contacto .cardContacto {
+section .contactForm .info .imgBox{
     position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    width: 350px;
+    height: 350px;
 }
 
-.contacto .cardContacto .cardImg {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    margin-top: 20px;
-    overflow: hidden;
-    box-shadow: 15px 15px 0px 0px #bbbeef;
-}
-
-.contacto .cardContacto .cardImg img {
+section .contactForm .info .imgBox img {
     position: absolute;
     top: 0;
     left: 0;
@@ -170,24 +244,65 @@ header .navbar li a:hover {
     object-fit: cover;
 }
 
-.contacto .cardContacto .card .contenidoCard {
-    width: 400px;
-}
-
-.contacto .cardContacto .card .contenidoCard p {
-    color: #bbbeef;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.contacto .cardContacto .card {
-    position: relative;
-    text-align: center;
+section .contactForm .info .textBox {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    padding: 30px;
+}
+
+section .contactForm .info .textBox .infoContact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section .contactForm .info .textBox .infoContact ion-icon {
+    font-size: 2em;
+    margin-right: 10px;
+    color: #0b426c;
+}
+
+section .contactForm .info .textBox .infoContact p {
+    color: #0b426c;
+}
+
+section .contactForm .info .rrss a{
+    padding: 20px;
+    font-size: 2em;
+    color: #1766a3;
+    transition: 0.3s;
+}
+
+section .contactForm .info .rrss a:hover{
+    color: #0b426c;
+}
+
+@media only screen and (max-width: 1200px) {
+    section .contactForm{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media only screen and (max-width: 768px){
+    section .contactForm .info {
+        height: 300px;
+        padding: 20px;
+    }
+
+    section .contactForm .info .imgBox {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section .contactForm .form {
+        margin-left: 0px;
+        width: 100%;
+    }
+    section .contactForm .info {
+        margin-bottom: 30px;
+    }
 }
 
 .copyright {
