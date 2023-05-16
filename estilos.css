@@ -12,9 +12,8 @@ html, body {
 }
 
 body{
-    background: #4286f4;
+    background: #ffffd5;
     background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
 }
 
 @keyframes gradient {
@@ -53,7 +52,7 @@ header {
 }
 
 header .logo {
-    color: blue;
+    color: black;
     font-size: 2em;
     text-decoration: none;
     text-transform: uppercase;
@@ -74,7 +73,7 @@ header .navbar li{
 
 header .navbar li a {
     text-decoration: none;
-    color: blue;
+    color: black;
     font-weight: 600;
     padding: 10px;
     transition: 0.3s;
@@ -137,7 +136,7 @@ header .navbar li a:hover {
 
 section .contactForm {
     position: relative;
-    background: #31356b;
+    background: #fff;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
     gap: 20px;
