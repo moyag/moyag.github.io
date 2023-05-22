@@ -62,8 +62,9 @@ header .logo {
 }
 
 header .navbar{
+    background: black;
     position: relative;
-    display: flex;
+    display: inline-block;
 }
 
 header .navbar li{
@@ -73,7 +74,7 @@ header .navbar li{
 
 header .navbar li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 600;
     padding: 10px;
     transition: 0.3s;
@@ -82,8 +83,7 @@ header .navbar li a {
 }
 
 header .navbar li a:hover {
-    color: #ffffd5;
-
+    background: grey;
 }
 
 .contenido {
@@ -121,8 +121,6 @@ header .navbar li a:hover {
     }
     
 }
-
-
 
 section .contactForm {
     position: relative;
