@@ -73,7 +73,6 @@ header .navbar li{
 }
 
 header .navbar li a {
-    display: inline-block;
     text-decoration: none;
     color: white;
     font-weight: 600;
